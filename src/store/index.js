@@ -7,6 +7,8 @@ export default new Vuex.Store({
     cart: [],
     needShowFooter: false,
     footerSelected: 0, //底部导航位置
+    searchValue: '',
+    indexData: {}
   },
   mutations: {  // 方法  处理state   this.$store.commit('方法名', 传值)
     addToCart(state, goodsInfo) {
@@ -27,6 +29,12 @@ export default new Vuex.Store({
     },
     updateSelected(state, val) {
       state.footerSelected = val;
+    },
+    updateSearchValue(state, val) {
+      state.searchValue = val;
+    },
+    updateIndexData(state, val) {
+      state.indexData = val;
     },
   },
   actions: {

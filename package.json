@@ -1,5 +1,5 @@
 {
-  "name": "vue-demo1",
+  "name": "vue-lele",
   "version": "1.0.0",
   "description": "A Vue.js project",
   "author": "Junney",
@@ -10,7 +10,8 @@
     "e2e": "node test/e2e/runner.js",
     "test": "npm run e2e",
     "lint": "eslint --ext .js,.vue src test/e2e/specs",
-    "build": "node build/build.js"
+    "build": "node build/build.js",
+    "svg": "vsvg -s ./src/assets/svg-icon -t ./src/icons"
   },
   "dependencies": {
     "axios": "^0.18.0",
